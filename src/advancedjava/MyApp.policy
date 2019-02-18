@@ -1,0 +1,18 @@
+grant{
+permission javax.security.auth.AuthPermission "createLoginContext.Login1";
+permission javax.security.auth.AuthPermission "doAsPrivileged";
+};
+grant principal  com.sun.security.auth.UserPrincipal "Nazar"{
+permission java.util.PropertyPermission "java.vendor", "read";
+        permission java.util.PropertyPermission "java.vendor.url", "read";
+        permission java.util.PropertyPermission "java.class.version", "read";
+        permission java.util.PropertyPermission "os.name", "read";
+        permission java.util.PropertyPermission "os.version", "read";
+        permission java.util.PropertyPermission "os.arch", "read";
+        permission java.util.PropertyPermission "file.separator", "read";
+        permission java.util.PropertyPermission "path.separator", "read";
+        permission java.util.PropertyPermission "line.separator", "read";
+
+        permission java.util.PropertyPermission "java.specification.version", "read";
+
+};
